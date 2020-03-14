@@ -43,7 +43,7 @@
     }
 	
     const CONFIG_LEACLOUD_COUNT = {
-      enable: true,
+      enable: false,
 	  appId: 'z1j8M3SAznSX6lRA7ABwid5V-gzGzoHsz',
 	  appKey: 'eUGRdHnRwgJ4ainkoh00sAgs',
 	  serverURLs: 'http' || ' '
@@ -106,10 +106,6 @@
 	</p>
 
 	
-	
-		<span id="star-button" rel="unlike">
-			<i class="icon-heart"></i>
-		</span>
 	
 
 	<!-- Nav trigger for navigation-H-->
@@ -278,25 +274,7 @@
 			
 			
 
-	
-    <span class="leancloud_visitors" id="/2020/03/13/hello-world/_visitors" data-url="/2020/03/13/hello-world/" data-title="Hello World">
-       	<i class="icon-eye"></i>
-       	热度
-        
-            <i class="leancloud_visitors_count" id="leancloud_visitors_count">1</i>
-                   
-    </span>
-    
 
-
-
-	
-    <span class="leancloud_likes" id="/2020/03/13/hello-world/_likes" data-url="/2020/03/13/hello-world/" data-title="Hello World" rel="unlike">
-        <i class="icon-heart"></i>
-        喜欢
-        <i class="leancloud_likes_count" id="leancloud_likes_count">0</i>
-    </span>
-	
 
 		</div>
 
@@ -359,11 +337,30 @@
 
 		
 
-			<!-- I don't know !!!-->
-			<div class="config-info">
-				Please check the parameter of <b>comment</b> in config.yml of hexo-theme-Annie!
-			</div>
-			
+			<!-- valine comment -->
+			<!-- show valine comment -->
+<div id="valineComment" class="comment"></div>
+
+<!-- valine`s js & css -->
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="/plugin/comment/valine.min.js"></script>
+<link rel="stylesheet" href="/css/comment.css">
+<script>
+	if( $('#valineComment').length ) {
+		new Valine({
+			// AV 对象来自上面引入av-min.js(老司机们不要开车➳♡゛扎心了老铁)
+			av: AV,
+			//使用id寻找div元素（使用class可能找不到?）
+			el: 'valineComment',
+			emoticon_url: 'https://cloud.panjunwen.com/alu',
+			emoticon_list: ["吐.png", "期待.png", "高兴.png", "吐血倒地.png", "哭泣.png", "欢呼.png"],
+			app_id: "z1j8M3SAznSX6lRA7ABwid5V-gzGzoHsz", //获取APP ID
+			app_key: "eUGRdHnRwgJ4ainkoh00sAgs", //获取APP KEY
+			placeholder: "快来发表你的评论吧!", //评论框占位提示文字        			
+		});
+	}
+</script>		
+
 		
 		
 	
@@ -666,11 +663,6 @@
 -->
 
 
-  
-<script src="/plugin/leancloud/av-min.js"></script>
-<script src="/js/leancloud-count.js"></script>
-
-
 	
 
   
@@ -698,21 +690,6 @@
 		<div class="local-search-footer">
 			<div class="topN-post">				
 				
-
-   
-	<div id="topN">
-		<div class="topN-title" data-title= "热门文章"></div> 
-	</div>
-	
-    <script>
-        var limitCount = 10;
-        if( $('#topN').length ){
-            setTimeout(function() {
-                topNPost(limitCount);
-			}, 3000);
-        }
-    </script>
-   
 								
 			</div>
 		</div>

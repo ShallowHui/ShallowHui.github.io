@@ -343,7 +343,7 @@
 
 <!-- valine`s js & css -->
 <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<script src="/plugin/comment/Valine.min.js"></script>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
 <link rel="stylesheet" href="/css/comment.css">
 <script>
 	if( $('#valineComment').length ) {
@@ -354,9 +354,9 @@
 			el: '#valineComment',
 			emoticon_url: 'https://cloud.panjunwen.com/alu',
 			emoticon_list: ["吐.png", "期待.png", "高兴.png", "吐血倒地.png", "哭泣.png", "欢呼.png"],
-			app_id: "246U1fXl8xloDBvjlBD33k0i", //获取APP ID
-			app_key: "", //获取APP KEY
-			placeholder: "Just go go", //评论框占位提示文字        			
+			app_id: "bmTC9mMEXazMndGczuPh7ikb-9Nh9j0Va", //获取APP ID
+			app_key: "246U1fXl8xloDBvjlBD33k0i", //获取APP KEY
+			placeholder: "快来发表你的评论吧！", //评论框占位提示文字        			
 		});
 	}
 </script>
@@ -582,6 +582,17 @@
 
 	<!-- busuanzi -->
 	<!-- busuanzi -->
+
+		
+	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	
+
+		<span>
+	  		本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+		</span>
+
+	
+
 
 
 

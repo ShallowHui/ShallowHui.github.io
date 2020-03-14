@@ -13,7 +13,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
   <title>
     
-      Hello World | zunhuier&#39;s blog
+      git的简单命令使用 | zunhuier&#39;s blog
     
   </title>
   <meta name="author" content="zunhuier">
@@ -101,7 +101,7 @@
 	<!-- Page title -->
 	<p>
 		
-			「Hello World」
+			「git的简单命令使用」
 		
 	</p>
 
@@ -242,8 +242,8 @@
 	<div id="layout-post">
 		<div class="article-title">
 			
-	<a href="/2020/03/13/hello-world/" itemprop="url">
-		Hello World
+	<a href="/2020/03/14/git/" itemprop="url">
+		git的简单命令使用
 	</a>
 
 		</div>
@@ -259,8 +259,8 @@
 
 	更新于
 
-	<a href="/2020/03/13/hello-world/" itemprop="url">
-		<time datetime="2020-03-13T12:58:26.875Z" itemprop="dateUpdated">
+	<a href="/2020/03/14/git/" itemprop="url">
+		<time datetime="2020-03-14T12:06:56.000Z" itemprop="dateUpdated">
 	  		2020-03-14
 	  </time>
 	</a> 
@@ -269,7 +269,14 @@
 
 			</span>
 			<span>
-						
+				
+	<i class="icon-price-tags"></i>
+	
+		<a href="/tags/Git/" class=" ">
+			Git
+		</a>
+	
+		
 			</span>
 			
 			
@@ -279,23 +286,52 @@
 		</div>
 
 		<div class="article-content" id="article-content">
-			<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-	
+			<h2 id="Git——分布式版本控制系统"><a href="#Git——分布式版本控制系统" class="headerlink" title="Git——分布式版本控制系统"></a>Git——分布式版本控制系统</h2><h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a><a href="https://baike.baidu.com/item/GIT/12647237?fr=aladdin" target="_blank" rel="noopener">简介</a></h3><p>个人觉得Linus大佬是用C语言里的指针和栈数据结构写出了Git。Git是套命令行工具，去官网直接下载安装即可(window下需要配环境，mac下不用(我也不知道为啥)，linux下直接终端输入sudo apt-get install git)。安装好后用命令配置个人用户信息(git配置按优先级从低到高分为：全局配置，适用于全体电脑用户→用户配置，适用于当前电脑用户→项目(特定仓库)配置)：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name <span class="string">"输入你的名字"</span></span><br><span class="line">$ git config --global user.email <span class="string">"输入你的邮箱"</span></span><br></pre></td></tr></table></figure>
+<p>这个配置只是起识别用户的作用。</p>
+<h3 id="推荐"><a href="#推荐" class="headerlink" title="推荐"></a>推荐</h3><p> 我这篇博客只是简单总结了一下git的常用简单命令，若想系统地了解git，分支，标签，分布式等等,这里推荐一个<a href="https://www.liaoxuefeng.com/wiki/896043488029600" target="_blank" rel="noopener">教程</a>。</p>
+<h2 id="简单命令的使用"><a href="#简单命令的使用" class="headerlink" title="简单命令的使用"></a>简单命令的使用</h2><h3 id="一些基本概念"><a href="#一些基本概念" class="headerlink" title="一些基本概念"></a>一些基本概念</h3><ul>
+<li><p>工作区：指本地仓库(git初始化后的本地文件夹)，你进行操作的地方。</p>
+</li>
+<li><p>暂存区：修改必须先送到暂存区保存起来。</p>
+</li>
+<li><p>版本库：从暂存区将修改送到版本库即完成一次提交。</p>
+</li>
+<li><p>修改：在git中，增、删、改操作都可以叫做修改</p>
+</li>
+</ul>
+<h3 id="Git进行版本控制的精髓"><a href="#Git进行版本控制的精髓" class="headerlink" title="Git进行版本控制的精髓"></a>Git进行版本控制的精髓</h3><p>git追踪的是修改，不是文件本身。分支指向当前提交，HEAD指向当前分支，解决合并冲突要手动修改再提交。</p>
+<p><img src="/img/myphotos/git.jpg" alt="Branch"></p>
+<h3 id="初始化一个本地仓库"><a href="#初始化一个本地仓库" class="headerlink" title="初始化一个本地仓库"></a>初始化一个本地仓库</h3><p>新建一个文件夹当做本地仓库准备初始化，然后在这个文件夹下进行git命令操作，window下控制台cd进入文件夹，mac下打开当前文件夹的终端。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git init <span class="comment">#初始化当前文件夹为一个git本地仓库，目录下会多出一个隐藏文件夹(.git)，暂存区、版本库、项目配置等都在里面</span></span><br></pre></td></tr></table></figure>
+<h3 id="建立远程连接"><a href="#建立远程连接" class="headerlink" title="建立远程连接"></a>建立远程连接</h3><p>这一步可以不做</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git remote add 自定义远程仓库名 远程仓库地址 <span class="comment">#可以将本地仓库与一个远程仓库关联。</span></span><br></pre></td></tr></table></figure>
+<p>可以是Gihthub上的一个仓库，也可以说是自己搭建的Git服务器。如果要与Github上的仓库连接，事先要进行本机的.ssh_key配置，具体教程百度，很简单，当然要有Github账户。</p>
+<h3 id="完成一次提交"><a href="#完成一次提交" class="headerlink" title="完成一次提交"></a>完成一次提交</h3><p>提交要按顺序不能颠倒命令</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git add 文件名.扩展名 <span class="comment">#将修改送到暂存区，可以一次性add多份文件，注意后面的命令都要加上扩展名</span></span><br><span class="line">$ git add . <span class="comment">#将工作区里的所有修改送到暂存区</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git commit -m <span class="string">"提交备注"</span> <span class="comment">#将暂存区里的所有修改提交到版本库</span></span><br></pre></td></tr></table></figure>
+<h3 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git push 自定义的远程仓库名 本地仓库分支名 <span class="comment">#将本地仓库的一个指定分支推送到远程仓库</span></span><br></pre></td></tr></table></figure>
+<p>注意：不能推送远程仓库已有的同名分支，git会认为这两个分支冲突(除非远程仓库的那个同名分支最初是由这个本地仓库推送过去的)，这种情况下要先从远程仓库拉取该分支过来进行合并。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git fetch 远程仓库名 远程仓库分支名 <span class="comment">#将远程仓库的一个指定分支拉取到本地仓库</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git merge 指定分支名 <span class="comment">#将指定分支合并到当前分支</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git pull 远程仓库分支名 <span class="comment"># = git fetch + git merge</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git status <span class="comment">#查看当前分支的工作区的状态</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git diff <span class="comment">#查看工作区与当前分支的版本库的区别</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">log</span> <span class="comment">#查看当前分支的提交历史</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout -- 文件名 <span class="comment">#将指定文件回溯到当前分支最近一次add或commit之后的状态,即撤销修改</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git reset HEAD 文件名 <span class="comment">#将指定文件已经在暂存区的修改撤销掉</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git rm 文件名 <span class="comment">#删除工作区里的指定文件，并且已经将这个修改给add了</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> 远程仓库地址 <span class="comment">#将远程仓库里的项目克隆到本地</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch <span class="comment">#查看分支情况</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout -b 新建分支名 <span class="comment">#新建一个分支并切换过去</span></span><br><span class="line">$ git switch -c 新建分支名 <span class="comment">#新版git的创建切换分支的新命令</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout 分支名 <span class="comment">#切换到指定分支</span></span><br><span class="line">$ git switch 分支名 <span class="comment">#新命令</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git branch -d 分支名 <span class="comment">#删除指定分支，删除当前分支要先切换到其它分支</span></span><br><span class="line">$ git branch -D 分支名 <span class="comment">#强制删除分支</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git tag <span class="comment">#查看当前分支的标签情况</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git reset --hard 提交历史id <span class="comment">#将当前分支的版本回退到指定的一次提交,即版本回退</span></span><br></pre></td></tr></table></figure>
+<h2 id="未完待续"><a href="#未完待续" class="headerlink" title="未完待续"></a>未完待续</h2>	
 		</div>
 		
-		<div id="current-post-cover" data-scr="/img/cart_cover.jpg"></div>
+		<div id="current-post-cover" data-scr="/img/myphotos/1.jpg"></div>
 
 		<!-- relate post, comment...-->
 		<div class="investment-container">
@@ -310,10 +346,10 @@
 	<span>
 		<a id="totop-post-page">返回顶部</a>
 		
-			<a href="/2020/03/14/git/" title="git的简单命令使用" rel="prev">
-				&laquo;上一篇
-			</a>
 		
+			<a href="/2020/03/13/hello-world/" title="Hello World" rel="next">
+				下一篇&raquo;
+			</a>
 			
 	</span>
 
@@ -332,22 +368,22 @@
 			
 					<li>
 						<div class="relate-post-text">
-							<a class="relate-post-title" href="/2020/03/14/git/" title="git的简单命令使用">
-								git的简单命令使用			
+							<a class="relate-post-title" href="/2020/03/13/hello-world/" title="Hello World">
+								Hello World			
 							</a>
 							<p class="relate-post-date">
 								<i class="fa fa-calendar"></i>
-								三月 14日, 2020				
+								三月 13日, 2020				
 							</p>
 							<p class="relate-post-content">
-								Git——分布式版本控制系统简介个人觉得Linus大佬是用C语言里的指针和栈数据结构写出了Git。Git是套命令行工具，去官网直接下载安装即可(window下需要配环境，mac下不用(我也不知道为啥)，linux下直接终端输入sudo...
+								Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using ...
 							</p>
 						</div>
 
 						<div class="relate-post-cover">
-							<a href="/2020/03/14/git/" title="git的简单命令使用">				
+							<a href="/2020/03/13/hello-world/" title="Hello World">				
 								
-								<img class="lazy" src="/img/lazy.gif" data-src="/img/myphotos/1.jpg" alt="git的简单命令使用"/>
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="Hello World"/>
 							</a>
 						</div>
 					</li>												

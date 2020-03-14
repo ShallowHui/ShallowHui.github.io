@@ -43,9 +43,9 @@
     }
 	
     const CONFIG_LEACLOUD_COUNT = {
-      enable: false,
-	  appId: 'AU8...',
-	  appKey: '4cU...',
+      enable: true,
+	  appId: 'z1j8M3SAznSX6lRA7ABwid5V-gzGzoHsz',
+	  appKey: 'eUGRdHnRwgJ4ainkoh00sAgs',
 	  serverURLs: 'http' || ' '
     }
   </script>
@@ -106,6 +106,10 @@
 	</p>
 
 	
+	
+		<span id="star-button" rel="unlike">
+			<i class="icon-heart"></i>
+		</span>
 	
 
 	<!-- Nav trigger for navigation-H-->
@@ -274,7 +278,25 @@
 			
 			
 
+	
+    <span class="leancloud_visitors" id="/2020/03/13/hello-world/_visitors" data-url="/2020/03/13/hello-world/" data-title="Hello World">
+       	<i class="icon-eye"></i>
+       	热度
+        
+            <i class="leancloud_visitors_count" id="leancloud_visitors_count">1</i>
+                   
+    </span>
+    
 
+
+
+	
+    <span class="leancloud_likes" id="/2020/03/13/hello-world/_likes" data-url="/2020/03/13/hello-world/" data-title="Hello World" rel="unlike">
+        <i class="icon-heart"></i>
+        喜欢
+        <i class="leancloud_likes_count" id="leancloud_likes_count">0</i>
+    </span>
+	
 
 		</div>
 
@@ -334,9 +356,16 @@
 					<div class="layout-comment">
 
 	
-		<div class="config-info">
-			Please check the parameter of <b>comment</b> in config.yml of hexo-theme-Annie!
-		</div>	
+
+		
+
+			<!-- I don't know !!!-->
+			<div class="config-info">
+				Please check the parameter of <b>comment</b> in config.yml of hexo-theme-Annie!
+			</div>
+			
+		
+		
 	
 
 </div>
@@ -557,17 +586,6 @@
 	<!-- busuanzi -->
 	<!-- busuanzi -->
 
-		
-	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-	
-
-		<span>
-	  		本文总阅读量<span id="busuanzi_value_page_pv"></span>次
-		</span>
-
-	
-
-
 
 
 			<br/><a href="javascript:zh_tran('s');" class="zh_click" id="zh_click_s">简体</a> 
@@ -648,6 +666,11 @@
 -->
 
 
+  
+<script src="/plugin/leancloud/av-min.js"></script>
+<script src="/js/leancloud-count.js"></script>
+
+
 	
 
   
@@ -675,6 +698,21 @@
 		<div class="local-search-footer">
 			<div class="topN-post">				
 				
+
+   
+	<div id="topN">
+		<div class="topN-title" data-title= "热门文章"></div> 
+	</div>
+	
+    <script>
+        var limitCount = 10;
+        if( $('#topN').length ){
+            setTimeout(function() {
+                topNPost(limitCount);
+			}, 3000);
+        }
+    </script>
+   
 								
 			</div>
 		</div>
